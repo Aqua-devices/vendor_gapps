@@ -13,10 +13,6 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/gapps/etc/init/bufferhubd.rc:system/etc/init/bufferhubd.rc \
-    vendor/gapps/etc/init/performanced.rc:system/etc/init/performanced.rc \
-    vendor/gapps/etc/init/vr_hwc.rc:system/etc/init/vr_hwc.rc \
-    vendor/gapps/etc/init/virtual_touchpad.rc:system/etc/init/virtual_touchpad.rc \
     vendor/gapps/etc/permissions/com.google.vr.platform.xml:system/etc/permissions/com.google.vr.platform.xml \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
