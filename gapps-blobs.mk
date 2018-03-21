@@ -17,12 +17,10 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/etc/init/performanced.rc:system/etc/init/performanced.rc \
     vendor/gapps/etc/init/vr_hwc.rc:system/etc/init/vr_hwc.rc \
     vendor/gapps/etc/init/virtual_touchpad.rc:system/etc/init/virtual_touchpad.rc \
-    vendor/gapps/etc/permissions/com.google.android.camera.experimental2017.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml \
     vendor/gapps/etc/permissions/com.google.vr.platform.xml:system/etc/permissions/com.google.vr.platform.xml \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/gapps/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
-    vendor/gapps/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
     vendor/gapps/etc/preferred-apps/google.xml:system/etc/preferred-apps/google.xml \
     vendor/gapps/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
     vendor/gapps/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml \
