@@ -25,12 +25,8 @@ PRODUCT_PACKAGES += \
     GoogleContactsSyncAdapter \
     GoogleTTS \
     talkback \
-    GoogleVrCore \
-    Photos \
     PrebuiltDeskClockGoogle \
-    Ornament \
-    WallpaperPickerGooglePrebuilt \
-    Turbo
+    WallpaperPickerGooglePrebuilt
 
 # messenger skip on tablets
 ifeq ($(filter dragon,$(TARGET_PRODUCT)),)
@@ -40,13 +36,11 @@ endif
 
 # /framework
 PRODUCT_PACKAGES += \
-    com.google.android.camera.experimental2017 \
     com.google.android.maps \
     com.google.android.media.effects
 
 # /priv-app
 PRODUCT_PACKAGES += \
-    AmbientSensePrebuilt \
     AndroidPlatformServices \
     CarrierSetup \
     ConfigUpdater \
