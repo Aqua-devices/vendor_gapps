@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     GoogleContactsSyncAdapter \
     GoogleTTS \
     Hangouts \
+    LatinIMEGooglePrebuilt \
     talkback \
     PrebuiltDeskClockGoogle \
     WallpaperPickerGooglePrebuilt
