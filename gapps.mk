@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     GoogleCamera \
     GoogleContactsSyncAdapter \
     GoogleTTS \
+    Hangouts \
     talkback \
     PrebuiltDeskClockGoogle \
     WallpaperPickerGooglePrebuilt
