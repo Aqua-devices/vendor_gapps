@@ -44,7 +44,6 @@ PRODUCT_PACKAGES += \
 # /priv-app
 PRODUCT_PACKAGES += \
     AndroidPlatformServices \
-    CarrierSetup \
     ConfigUpdater \
     ConnMetrics \
     GmsCoreSetupPrebuilt \
