@@ -24,11 +24,9 @@ PRODUCT_PACKAGES += \
     GoogleCamera \
     GoogleContactsSyncAdapter \
     GoogleTTS \
-    Hangouts \
     LatinIMEGooglePrebuilt \
     talkback \
-    PrebuiltDeskClockGoogle \
-    WallpaperPickerGooglePrebuilt
+    PrebuiltDeskClockGoogle 
 
 # messenger skip on tablets
 ifeq ($(filter dragon,$(TARGET_PRODUCT)),)
@@ -43,13 +41,13 @@ PRODUCT_PACKAGES += \
 
 # /priv-app
 PRODUCT_PACKAGES += \
-    AndroidPlatformServices \
+    AmbientSensePrebuilt \
+    AndroidMigratePrebuilt \
     ConfigUpdater \
     ConnMetrics \
     GmsCoreSetupPrebuilt \
     GoogleBackupTransport \
     GoogleFeedback \
-    GoogleLoginService \
     GoogleOneTimeInitializer \
     GooglePartnerSetup \
     GoogleServicesFramework \
