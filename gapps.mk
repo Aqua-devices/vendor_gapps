@@ -90,4 +90,8 @@ PRODUCT_COPY_FILES_OVERRIDES += \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/gapps/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
+# Default priv-app permissions
+PRODUCT_COPY_FILES += \
+    vendor/gapps/etc/permissions/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
+
 $(call inherit-product, vendor/gapps/gapps-blobs.mk)
