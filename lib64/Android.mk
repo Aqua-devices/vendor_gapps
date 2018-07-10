@@ -13,6 +13,8 @@
 # limitations under the License.
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
 ifeq ($(TARGET_ARCH),arm64)
 
 include $(CLEAR_VARS)
@@ -30,4 +32,6 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) rm -rf $(SYMLINK)
 	$(hide) ln -sf $(TARGET) $(SYMLINK)
 	$(hide) touch $@
+endif
+
 endif

@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# /app
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
+# /apps
 PRODUCT_PACKAGES += \
     CalculatorGooglePrebuilt \
     GoogleContacts \
@@ -25,10 +27,10 @@ PRODUCT_PACKAGES += \
     talkback \
     GoogleVrCore \
     PrebuiltBugle \
-    PrebuiltDeskClockGoogle \
+#   PrebuiltDeskClockGoogle \
     Ornament \
-    WallpaperPickerGooglePrebuilt \
-    Turbo
+#   WallpaperPickerGooglePrebuilt
+#   Turbo
 
 PRODUCT_PACKAGES += \
     com.google.android.camera.experimental2017 \
@@ -49,7 +51,7 @@ PRODUCT_PACKAGES += \
     GoogleOneTimeInitializer \
     GooglePartnerSetup \
     GoogleServicesFramework \
-    NexusLauncherPrebuilt \
+#   NexusLauncherPrebuilt \
     Phonesky \
     PrebuiltGmsCorePix \
     DynamiteModulesA \
@@ -95,3 +97,5 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/etc/permissions/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
 
 $(call inherit-product, vendor/gapps/gapps-blobs.mk)
+
+endif

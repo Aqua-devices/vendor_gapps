@@ -14,6 +14,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := CalculatorGooglePrebuilt
 LOCAL_MODULE_TAGS := optional
@@ -101,15 +103,15 @@ LOCAL_OVERRIDES_PACKAGES := Messaging \
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := PrebuiltDeskClockGoogle
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_OVERRIDES_PACKAGES := DeskClock
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := PrebuiltDeskClockGoogle
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_SRC_FILES := PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk
+#LOCAL_CERTIFICATE := PRESIGNED
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_OVERRIDES_PACKAGES := DeskClock
+#LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := talkback
@@ -189,3 +191,4 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) echo "Copy: $(TARGET) -> $(SYMLINK)"
 	$(hide) cp $(TARGET) $(SYMLINK)
 
+endif

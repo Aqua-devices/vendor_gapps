@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifneq ($(filter taimen walleye,$(TARGET_PRODUCT)),)
+
 PRODUCT_COPY_FILES += \
     vendor/gapps/etc/permissions/com.google.vr.platform.xml:system/etc/permissions/com.google.vr.platform.xml \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
@@ -41,7 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/lib64/libfrsdk.so:system/lib64/libfrsdk.so \
     vendor/gapps/lib64/libdvr_loader.so:system/lib64/libdvr_loader.so \
     vendor/gapps/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk.prof:system/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk.prof \
-    vendor/gapps/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk.prof:system/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk.prof \
+#   vendor/gapps/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk.prof:system/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk.prof \
     vendor/gapps/app/GoogleCamera/GoogleCamera.apk.prof:system/app/GoogleCamera/GoogleCamera.apk.prof \
     vendor/gapps/priv-app/GoogleContacts/GoogleContacts.apk.prof:system/priv-app/GoogleContacts/GoogleContacts.apk.prof \
     vendor/gapps/priv-app/GoogleDialer/GoogleDialer.apk.prof:system/priv-app/GoogleDialer/GoogleDialer.apk.prof \
@@ -112,3 +114,5 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/usr/srec/en-US/voice_actions_compiler.config:system/usr/srec/en-US/voice_actions_compiler.config \
     vendor/gapps/usr/srec/en-US/word_confidence_classifier:system/usr/srec/en-US/word_confidence_classifier \
     vendor/gapps/usr/srec/en-US/wordlist.syms:system/usr/srec/en-US/wordlist.syms
+
+endif
